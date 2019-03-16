@@ -10,14 +10,24 @@ import java.util.Scanner;
  */
 public final class Main {
     /**
-     * Хранилище пользовательских логинов и паролей
+     * Хранилище пользовательских
+     * логинов и паролей.
      */
     private static Map<String, String> logPassMap;
 
+    /**
+     * Приватный конструтор, недоступность
+     * создать экзепляр данного класса извне.
+     */
     private Main() {
 
     }
 
+    /**
+     * Запускааемый метод класса.
+     *
+     * @param args аргумент командной строки
+     */
     public static void main(final String[] args) {
         Scanner scanner = new Scanner(System.in, "UTF-8");
         logPassMap = new HashMap<>();
